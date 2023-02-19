@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/b24e2839eb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpeg" class="logo" width="200px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <!-- dark mode -->
+                    <input type="checkbox"  class="input" id="dark-mode">
+                     <label for="dark-mode" class="label">
+                        <div class="circle">
+                            
+                        </div>
+                    </label>
+
+
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class=header-text>
+                <p>Web/UX Designer</p>
+                <h1>Hi,I'm <span>Saurab</span> <br> Neupane From Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ...........about section ...... -->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="saurab2.jpg" width="400px">
+                </div>
+                <div class="about-col-2">
+
+                    <h1 class="subtitle"> About Me</h1>
+                    <p>Hello there, Welcome to my Personal Portfolio . I'd like to introduce myself. My name is Saurab
+                        Neupane. I'm from Parasi, NawalParasi.  I am now residing in Kathmandu, Nepal. I'm now working
+                        on a frontend project and attempting to create as many clone websites as possible. I've also
+                        created over 40-50 clone websites, including apple clones, Daraz clones, automobile animations,
+                        and many others. I'll be designing the e-commerce sites as soon as I finish my
+                        personal Portfolio, so stay tuned. Thank you for stopping by. </p>
+
+                    <div class="tabtitles">
+                        <p class="tablinks activelink" onclick="opentab('skills')"> Skills</p>
+                        <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                        <p class="tablinks" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tabcontents activetab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designing Web interface</li>
+                            <li><span>Web Development</span> <br>Web App Development</li>
+                            <li><span>App Development</span> <br>Building Android/ios Apps</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li><span> 2021 - Current</span><br>UI/UX Design Training at ET
+                                Institute </li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin
+                                Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+
+                        </ul>
+                    </div>
+
+                    <div class="tabcontents" id="education">
+
+                        <ul>
+                            <li><span>2022</span><br>UI/UX/Web Design Training at ET Institute,Bootcamp,Codewithharry
+                            </li>
+                            <li><span>2021</span><br>+2 from KMC,Lalitpur.</li>
+                            <li><span>2019</span><br>SEE from LPEHS,Parasi.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- ............services........ -->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">My Services</h1>
+                <div class="serviceslist">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, enim.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, enim.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, enim.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- ..........portfolio...... -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">My Work</h1>
+                <div class="worklist">
+
+                    <div class="work">
+                        <img src="uiux.webp" alt="" width="100%">
+                        <div class="layer">
+                            <h3>UI/UX Design</h3>
+                            <p>You can check out my UI/UX design where i have used plenty of designs. Do check it out
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="web.jpeg" width="115%">
+                        <div class="layer">
+                            <h3>Web Development</h3>
+                            <p>You can check me website which i have linked belwo . I've created tons of clone webiste
+                                so do check out that one too.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="app.jpg" alt="" width="100%">
+                        <div class="layer">
+                            <h3>App Development</h3>
+                            <p>You can check the app which i have created using c, c++ and python . DO download and give
+                                the
+                                feedback too . Thank you for checking</p>
+
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+
+
+        <!-- ......contact...... -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contactleft">
+                        <h1 class="subtitle"> Contact Me</h1>
+
+
+                        <p> <i class="fa-solid fa-paper-plane"></i> Saurabneupaneoffical07@gmail.com</p>
+
+                        <p> <i class="fa-solid fa-phone"></i>098765432</p>
+
+
+                        <div class="socialicon">
+                            <a href="http://www.facebook.com/saurab neupane offical">
+                                <i class="fa-brands fa-facebook"></i></a>
+
+                            <a href="http://www.instagram.com/saurab_neupane">
+                                <i class="fa-brands fa-instagram">
+                                </i></a>
+
+
+                            <a href="http://www.twitter.com/Saurab_vloggify">
+                                <i class="fa-brands fa-twitter"></i></a>
+
+                            <a href="http://www.youtube.com/saurab vloggify"><i class="fa-brands fa-youtube"></i></a>
+
+                            <a href="www.linkedin.com/in/saurabneupane"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                        <a href="Saurab-Neupane-cv-3.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+
+                    <div class="contactright">
+                        <form name="submit-to-google-sheet">
+                            <input type="text " name="Name" placeholder="Your Name " required>
+                            <input type="text " name="email" placeholder="Your Email " required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="message"></span>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="copyright">
+                <p>Copyright &copy; Saurab. All Rights Reserved</p>
+            </div>
+        </footer>
+        <script src="portfolio.js"></script>
+
+
+</body>
+
+
+
+</html>
